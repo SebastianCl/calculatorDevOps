@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="ngDevops">
+
+<head>
+    <title>Angular with DevOps</title>
+    <meta charset='utf-8'>
+    <meta name="description" content="App de prueba para DevOps">
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../controller/lib/operation.js"></script>
+    <script type="text/javascript" src="../controller/app.js"></script>
+
+</head>
+
+<body ng-controller="ngCtrl" ng-init="init()">
+    <h1>Calculadora enteros positivos</h1>
+    <label>Número 1</label>
+    <input type="number" min="0"  ng-model="n1">
+    <label>Número 2</label>
+    <input type="number" min="0" ng-model="n2">
+
+    <br /><br />
+    <input type="button" id="btnSum" value="Sumar" ng-click="clickSum(n1,n2)">
+    <input type="button" id="btnSubtract" value="Restar" ng-click="clickSubtract(n1,n2)">
+    <input type="button" id="btnMultiply" value="Multiplicar" ng-click="clickMultiply(n1,n2)">
+    <input type="button" id="btnDivide" value="Dividir" ng-click="clickDivide(n1,n2)">
+    <br /><br />
+
+    <label>Resultado: {{result}}</label>
+
+</body>
+
+</html>
