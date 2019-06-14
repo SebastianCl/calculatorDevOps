@@ -22,13 +22,13 @@ QUnit.test("Test divide", function (assert) {
   assert.ok(n === 3, "Passed!");
 });
 
-//Prueba para validar un número es mayor a cero
+//Prueba para validar si número es cero
 QUnit.test("Test number zero", function (assert) {
   var sw = validateNumberZero(5);
   assert.ok(sw === true, "Passed!");
 });
 
-//Prueba para validar un número es mayor a cero
+//Prueba para validar si una entrada es un número
 QUnit.test("Test is Number", function (assert) {
   var sw = validateIsNumber(5);
   assert.ok(sw === true, "Passed!");

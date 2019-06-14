@@ -1,6 +1,6 @@
 angular
-    .module("ngDevops", [])
-    .controller("ngCtrl", ['$scope', ctrl]);
+    .module("appCalculator", [])
+    .controller("ctrlCalculator", ['$scope', ctrl]);
 
 function ctrl(sc) {
 
@@ -15,7 +15,7 @@ function ctrl(sc) {
             sc.result = sum(n1, n2);
         }
         else {
-            sc.result = "You must enter two numbers";
+            sc.result = "You must enter two valid numbers";
         }
     }
 
@@ -24,7 +24,7 @@ function ctrl(sc) {
             sc.result = subtract(n1, n2);
         }
         else {
-            sc.result = "You must enter two numbers";
+            sc.result = "You must enter two valid numbers";
         }
     }
 
@@ -33,7 +33,7 @@ function ctrl(sc) {
             sc.result = multiply(n1, n2);
         }
         else {
-            sc.result = "You must enter two numbers";
+            sc.result = "You must enter two valid numbers";
         }
     }
 
@@ -47,7 +47,7 @@ function ctrl(sc) {
             }
         }
         else {
-            sc.result = "You must enter two numbers";
+            sc.result = "You must enter two valid numbers";
         }
 
     }

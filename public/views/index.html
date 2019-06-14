@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="ngDevops">
+<html lang="es" ng-app="appCalculator">
 
 <head>
-    <title>Angular with DevOps</title>
+    <title>Calculadora de enteros</title>
     <meta charset='utf-8'>
     <meta name="description" content="App de prueba para DevOps">
     <!--SCRIPTS-->
     <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="../controller/lib/operation.js"></script>
-    <script type="text/javascript" src="../controller/app.js"></script>
+    <script type="text/javascript" src="../controller/calculator.js"></script>
 
 </head>
 
-<body ng-controller="ngCtrl" ng-init="init()">
+<body ng-controller="ctrlCalculator" ng-init="init()">
     <h1>Calculadora enteros positivos</h1>
     <label>Número 1</label>
-    <input type="number" min="0"  ng-model="n1">
+    <input type="number" min="0" ng-model="n1">
     <label>Número 2</label>
     <input type="number" min="0" ng-model="n2">
 
