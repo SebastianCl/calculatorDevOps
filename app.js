@@ -1,8 +1,9 @@
-const express = require('express'),
-    path = require('path');
+let express = require('express');
+let path = require('path');
+let favicon = require('serve-favicon');
 
-const app = express();
-
+let app = express();
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(express.static('./'));
 
 app.get('/*', (req, res) => {
