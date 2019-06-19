@@ -1,31 +1,34 @@
-var validateNumberZero = function (n) {
+function validateNumberZero(n) {
     if (n == 0) {
         return false;
     }
     return true;
 };
 
-var validateIsNumber = function (caracter) {
+function validateIsNumber(caracter) {
     if (!/^([0-9])*$/.test(caracter)) {
         return false;
     }
     return true;
 };
 
-/*var sum = (n1, n2) => n1 + n2;
-var subtract = (n1, n2) => n1 - n2;
-var multiply = (n1, n2) => n1 * n2;
-var divide = (n1, n2) => n1 / n2;*/
+/*sum = (n1, n2) => n1 + n2;
+subtract = (n1, n2) => n1 - n2;
+multiply = (n1, n2) => n1 * n2;
+divide = (n1, n2) => n1 / n2;
+*/
+function sum(n1, n2) {
+    return n1 + n2;
+};
+function subtract(n1, n2) {
+    return n1 - n2;
+};
+function multiply(n1, n2) {
+    return n1 * n2;
+};
+function divide(n1, n2) {
+    return n1 / n2;
+};
 
-var sum = function (n1,n2){
-    return n1+n2;
-};
-var subtract = function (n1,n2){
-    return n1-n2;
-};
-var multiply = function (n1,n2){
-    return n1*n2;
-};
-var divide = function (n1,n2){
-    return n1/n2;
-};
+
+module.exports = sum;

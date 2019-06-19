@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Calculator built with AngularJS for DevOps",
   "scripts": {
-    "start": "node ./app.js"
+    "start": "nodemon ./app.js",
+    "test": "jest"
   },
   "author": "Sebastian Cardona Loaiza",
   "license": "ISC",
@@ -15,9 +16,12 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-polyfill": "^6.26.0",
     "grunt": "^1.0.4",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-watch": "^1.1.0",
+    "jest": "^24.8.0",
     "load-grunt-tasks": "^5.0.0",
     "nodemon": "^1.19.1",
     "qunit": "^2.9.2"

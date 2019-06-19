@@ -6,7 +6,13 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage("Obteniendo codigo fuente") {
+            steps{
+                git "https://github.com/SebastianCl/calculatorDevOps"
+            }
+        }
+
+        stage('Instalar dependencias') { 
             steps {
                 sh 'npm install' 
             }
