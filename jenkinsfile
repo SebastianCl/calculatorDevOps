@@ -6,6 +6,7 @@ pipeline {
         }
     }
     stages {
+        
         stage("Obteniendo codigo fuente") {
             steps{
                 git "https://github.com/SebastianCl/calculatorDevOps"
@@ -19,7 +20,7 @@ pipeline {
         }
         stage("Ejecutando Tests") {
             steps {
-                sh 'node-qunit-phantomjs ./test/test.html'
+                sh 'npm test'
             }
         }
     }

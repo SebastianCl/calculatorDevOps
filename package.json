@@ -11,19 +11,18 @@
   "dependencies": {
     "angular": "^1.7.8",
     "express": "^4.17.1",
-    "node-qunit-phantomjs": "^2.0.1",
-    "qunit-phantomjs-runner": "^2.3.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
-    "babel-polyfill": "^6.26.0",
     "grunt": "^1.0.4",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-watch": "^1.1.0",
     "jest": "^24.8.0",
     "load-grunt-tasks": "^5.0.0",
-    "nodemon": "^1.19.1",
-    "qunit": "^2.9.2"
+    "nodemon": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SebastianCl/calculatorDevOps.git"
   }
 }
