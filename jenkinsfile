@@ -1,27 +1,21 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine' 
-            args '-p 3000:3000' 
-        }
+  agent {
+    docker {
+      args '-p 3000:3000'
+      image 'node:8'
     }
-    stages {
-        
-        stage("Obteniendo codigo fuente") {
-            steps{
-                git "https://github.com/SebastianCl/calculatorDevOps"
-            }
-        }
 
-        stage('Instalar dependencias') { 
-            steps {
-                sh 'npm install' 
-            }
-        }
-        stage("Ejecutando Tests") {
-            steps {
-                sh 'npm test'
-            }
-        }
+  }
+  stages {
+    stage('Instalar dependencias') {
+      steps {
+        sh 'npm install'
+      }
     }
+    stage('Ejecutando Tests') {
+      steps {
+        sh 'npm test'
+      }
+    }
+  }
 }
