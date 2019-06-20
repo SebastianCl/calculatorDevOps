@@ -14,6 +14,7 @@ pipeline {
     }
     stage('Ejecutando Tests') {
       steps {
+        echo 'Test sum'
         sh 'npm test'
       }
     }
